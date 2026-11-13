@@ -52,7 +52,7 @@ body.nav-open {
   transition: box-shadow var(--transition);
 }
 
-.container {
+.site-header .container {
   width: min(100% - (2 * var(--gutter)), var(--container));
   margin-inline: auto;
 
@@ -181,7 +181,7 @@ body.nav-open {
   background-position: 20px;
 }
 
-.title p {
+.title .titlebox{
     font-size: clamp(0.8rem, 1.7vw, 1.4rem);
     line-height: 1.5;
     opacity: 0.9;
@@ -199,6 +199,15 @@ body.nav-open {
 
     padding: clamp(8px, 1.5vw, 15px);
     margin-bottom: clamp(30px, 10vw, 150px);
+}
+
+.title p{
+  font-size: clamp(0.8rem, 1.7vw, 1.4rem);
+    opacity: 0.9;
+    color: black;
+    text-shadow: 2px 2px 4px white;
+    text-align: left;
+    margin: 0;
 }
 
 .text-row {
@@ -227,4 +236,23 @@ main{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     width: 100%;
+}
+
+.welcontain{
+  background: var(--white);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  transition: box-shadow var(--transition);
+  height: 500px;
+}
+
+.welcontain .container{
+  width: min(100% - (2 * var(--gutter)), var(--container));
+  margin-inline: auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  min-height: 4.75rem;
 }
