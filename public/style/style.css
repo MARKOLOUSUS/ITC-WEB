@@ -271,6 +271,7 @@ section h1 {
 }
 section p{
   text-align: justify;
+  margin: 0%;
 }
 
 section img {
@@ -280,9 +281,12 @@ section img {
     border-radius: 10px;
 }
 
-
-.white{
+.nowhite{
   background-color: transparent;
+}
+.nowhite p{
+  display: flex;
+  align-items: center;
 }
 
 .reveal {
@@ -298,4 +302,100 @@ section img {
 
 section .close{
   margin: 0%;
+}
+
+.merge {
+    display: grid;
+    grid-template-columns: 1fr 2px 1fr;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.merge img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0%;
+    object-fit: cover;
+}
+.merge img:first-child {
+    border-radius: 15px 0 0 15px;
+}
+.merge img:last-child {
+    border-radius: 0 15px 15px 0;
+}
+.divider {
+    background: black;
+    height: 100%;
+}
+
+
+.Product {
+    padding: 3rem 5%;
+}
+
+.Product .intro {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.agriproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.agriproduct h3 {
+    margin-bottom: 1.5rem;
+}
+
+.productcontain {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 900px;
+}
+
+.productcard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.productcard img {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.productcard h4 {
+    margin: 0;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+    .productcontain {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 500px) {
+    .Product {
+        padding: 3rem 5%;
+    }
+
+    .productcontain {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    .productcard img {
+        height: 150px;
+    }
 }
