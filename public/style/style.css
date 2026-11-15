@@ -51,7 +51,12 @@ body.nav-open {
   border-bottom: 1px solid var(--line);
   transition: box-shadow var(--transition);
 }
-
+.site-footer{
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  transition: box-shadow var(--transition);
+}
+.site-footer .container,
 .site-header .container {
   width: min(100% - (2 * var(--gutter)), var(--container));
   margin-inline: auto;
@@ -250,7 +255,7 @@ main {
     gap: 2rem;
 }
 
-section {
+.split {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
@@ -259,6 +264,15 @@ section {
     background-color:white;
     border-bottom: 1px solid var(--line);
 }
+.nosplit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color:white;
+    border-bottom: 1px solid var(--line);
+}
+
 section .intro{
     text-align: center;
 }
@@ -346,7 +360,7 @@ section .close{
     margin-bottom: 3rem;
 }
 
-.agriproduct h3 {
+.agriproduct h2 {
     margin-bottom: 1.5rem;
 }
 
@@ -372,6 +386,7 @@ section .close{
     height: 170px;
     object-fit: cover;
     border-radius: 10px;
+    border: 1px solid black
 }
 
 .productcard h4 {
@@ -398,4 +413,30 @@ section .close{
     .productcard img {
         height: 150px;
     }
+}
+
+.Newscontain{
+  display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1500px;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.News img{
+  width: 270px;
+  height: 180px;
+}
+
+section img {
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.1);
 }
