@@ -1,28 +1,43 @@
-.center{
+.center {
     justify-items: center;
     width: 100%;
-    max-width: 1000px;
-    height: auto;
+    max-width: 1600px;
+    margin-inline: auto;
 }
 
-main{
+main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     width: 100%;
     min-height: 91vh;
+    padding: 20px;
     padding-bottom: clamp(3.3rem, 4.7vw, 4rem);
     gap: 2rem;
+
     box-sizing: border-box;
 
     background-image: url("/public/images/Phillippines.avif");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment:scroll;
-    box-shadow: 5px solid yellow;
-    background-attachment: fixed;
+    background-attachment: scroll;
+}
+
+.insidecontain {
+    display: grid;
+    gap: clamp(5px, 1vw, 20px);
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+
+    font-size: clamp(50px, 7.5vw, 150px);
+    font-weight: bold;
+    line-height: 0.9;
 }
 
 .ourphoto{

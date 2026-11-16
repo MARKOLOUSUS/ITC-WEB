@@ -137,7 +137,7 @@ main {
     gap: 2rem;
     box-sizing: border-box;
     background:
-        linear-gradient(to left, transparent 30%, rgba(248, 247, 240, 0.95) 100%),
+        linear-gradient(to left, transparent 30%, var(--green-900) 100%),
         url("/public/images/rice-terrain.jpg") center / cover no-repeat;
         background-attachment: fixed;
 }
@@ -164,9 +164,7 @@ main {
     max-width: 100%;
     justify-content: start;
     text-align: left;
-    padding-top: 20px;
 
-    font-size: clamp(50px, 10vw, 160px);
     font-weight: bold;
     line-height: 0.9;
     margin: 0 0 20px;
@@ -187,6 +185,7 @@ main {
     grid-template-columns: auto auto;
     justify-content: start;
     gap: 20px;
+    font-size: clamp(50px, 7.5vw, 150px);
 }
 
 .first {
@@ -209,7 +208,7 @@ section .intro {
     grid-template-rows: auto 1fr;
     gap: 20px;
     padding: 20px;
-    background-color: white;
+    background-color: var(--white);
     border-bottom: 1px solid var(--line);
 }
 
@@ -283,6 +282,7 @@ section .history {
     justify-content: center;
     gap: 15px;
     width: 100%;
+    overflow: hidden;
 }
 
 .context {
@@ -356,17 +356,16 @@ section .history {
 }
 
 .cropcard img {
-    width: 200px;
-    height: 200px;
+    width: clamp(100px, 17vw, 270px);
+    height: clamp(90px, 13vw, 180px);
     object-fit: cover;
     border-radius: 10px;
     border: 1px solid black
 }
 
 .acticard img {
-    width: 100%;
-    max-width: 470px;
-    height: auto;
+    width: clamp(90px, 30vw, 470px);
+    height: clamp(80px, 20vw, 300px);
     aspect-ratio: 47 / 30;
     object-fit: cover;
     border-radius: 10px;

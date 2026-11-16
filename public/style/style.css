@@ -142,7 +142,7 @@ body.nav-open {
     width: 100%;
     margin: 50px auto 0;
     text-align: left;
-    color: white;
+    color: var(--white);
     padding-top: 40px;
     padding-left: 80px;
     padding-bottom: 80px;
@@ -206,8 +206,8 @@ body.nav-open {
     max-width: 100%;
     box-sizing: border-box;
 
-    background: rgba(255, 255, 255, 0.402);
-    border: 3px solid rgba(255, 255, 255, 0.402);
+    background: var(--green-100);
+    border: 5px solid var(--line);
     border-radius: 10px;
 
     padding: clamp(8px, 1.5vw, 15px);
@@ -256,6 +256,7 @@ main {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     width: 100%;
+    min-height: 91vh;
     padding-bottom: clamp(3.3rem, 4.7vw, 4rem);
     gap: 2rem;
 }
@@ -396,7 +397,7 @@ section .close {
     height: 170px;
     object-fit: cover;
     border-radius: 10px;
-    border: 1px solid black
+    border: 1px solid var(--line);
 }
 
 .productcard h4 {
@@ -404,9 +405,43 @@ section .close {
     text-align: center;
 }
 
+.Newscontain {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 1500px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.News img {
+    width: clamp(100px, 17vw, 270px);
+    height: clamp(90px, 13vw, 180px);
+}
+
+section img {
+    transition: transform 0.3s ease;
+}
+
+section img:hover {
+    transform: scale(1.1);
+}
+
 @media (max-width: 900px) {
     .productcontain {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .top-border{
+        max-width: 500px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -423,29 +458,4 @@ section .close {
     .productcard img {
         height: 150px;
     }
-}
-
-.Newscontain {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    grid-template-rows: repeat(2, auto);
-    justify-content: center;
-    gap: 1.5rem;
-    width: 100%;
-    max-width: 1500px;
-    text-decoration: none;
-    color: inherit;
-}
-
-.News img {
-    width: 270px;
-    height: 180px;
-}
-
-section img {
-    transition: transform 0.3s ease;
-}
-
-section img:hover {
-    transform: scale(1.1);
 }
