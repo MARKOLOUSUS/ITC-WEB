@@ -1,0 +1,30 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 91vh;
+    padding-bottom: clamp(3.3rem, 4.7vw, 4rem);
+    gap: 2rem;
+    box-sizing: border-box;
+
+    background-image: url("/public/images/fishbackround.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:scroll;
+
+    background:
+        linear-gradient(to left, transparent 30%, rgba(248, 247, 240, 0.95) 100%),
+        url("/public/images/fishbackround.jpeg") center / cover no-repeat;
+        background-attachment: fixed;
+
+}
+
+.first {
+    background-image: url("/public/images/tuna.jpg");
+    background-position: center;
+}
+.second {
+    background-image: url("/public/images/scallop.jpg");
+  background-position: center;
+}
