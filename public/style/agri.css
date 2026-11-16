@@ -1,27 +1,28 @@
 
 :root {
-  --green-900: #245c3a;
-  --green-700: #387a4a;
-  --green-100: #eaf3e8;
-  --blue-700: #267c9b;
-  --blue-100: #e8f3f7;
-  --cream: #f8f7f0;
-  --ink: #26332b;
-  --muted: #5f6e64;
-  --line: #d8dfd6;
-  --white: #ffffff;
-  --green-deep: #1b472d;
-  --blue-deep: #1c5c73;
+    --green-900: #245c3a;
+    --green-700: #387a4a;
+    --green-100: #eaf3e8;
+    --blue-700: #267c9b;
+    --blue-100: #e8f3f7;
+    --cream: #f8f7f0;
+    --ink: #26332b;
+    --muted: #5f6e64;
+    --line: #d8dfd6;
+    --white: #ffffff;
+    --green-deep: #1b472d;
+    --blue-deep: #1c5c73;
 
-  --font-sans: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
-  --container: 76rem;
-  --gutter: clamp(1.25rem, 4vw, 3rem);
-  --section-space: clamp(3.5rem, 7vw, 6rem);
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --shadow-soft: 0 12px 32px rgba(38, 51, 43, 0.08);
-  --transition: 180ms ease;
+    --font-sans: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    --container: 76rem;
+    --gutter: clamp(1.25rem, 4vw, 3rem);
+    --section-space: clamp(3.5rem, 7vw, 6rem);
+    --radius-sm: 0.25rem;
+    --radius-md: 0.5rem;
+    --shadow-soft: 0 12px 32px rgba(38, 51, 43, 0.08);
+    --transition: 180ms ease;
 }
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 7rem;
@@ -50,14 +51,14 @@ body {
 
 .site-footer .container,
 .site-header .container {
-  width: min(100% - (2 * var(--gutter)), var(--container));
-  margin-inline: auto;
+    width: min(100% - (2 * var(--gutter)), var(--container));
+    margin-inline: auto;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  min-height: 4.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    min-height: 4.75rem;
 }
 
 .brand {
@@ -139,20 +140,20 @@ main {
         linear-gradient(to left, transparent 30%, rgba(248, 247, 240, 0.95) 100%),
         url("/public/images/rice-terrain.jpg") center / cover no-repeat;
         background-attachment: fixed;
-
 }
 
 .title {
     text-align: left;
-  justify-content: center;
-  width: 100%;
-  text-align: left;
-  color: black;
-  padding-left: 80px;
-  padding-bottom: 80px;
-  box-sizing: border-box;
+    justify-content: center;
+    width: 100%;
+    text-align: left;
+    color: black;
+    padding-left: 80px;
+    padding-bottom: 80px;
+    box-sizing: border-box;
 }
-.title h1{
+
+.title h1 {
     font-size: clamp(2rem, 5vw, 5rem);
 }
 
@@ -180,6 +181,7 @@ main {
     background-size: cover;
     background-position: center;
 }
+
 .text-row {
     display: grid;
     grid-template-columns: auto auto;
@@ -191,24 +193,27 @@ main {
     background-image: url("/public/images/mango.jpg");
     background-position: center;
 }
+
 .second {
     background-image: url("/public/images/ricegrain.jpeg");
-  background-position: center;
+    background-position: center;
 }
 
-section .intro{
+section .intro {
     text-align: center;
 }
+
 .split {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr;
     gap: 20px;
     padding: 20px;
-    background-color:white;
+    background-color: white;
     border-bottom: 1px solid var(--line);
 }
-section .intro{
+
+section .intro {
     text-align: center;
 }
 
@@ -218,11 +223,12 @@ section h1 {
     grid-column: 1 / 3;
     color: black;
 }
-section p{
-  text-align: justify;
-  display: flex;
-  align-items: center;
-  margin: 0%;
+
+section p {
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    margin: 0%;
 }
 
 section img {
@@ -249,16 +255,20 @@ section img {
     object-fit: cover;
     object-position: center;
 }
-.box{
+
+.box {
     height: 250px;
     width: 250px;
 }
-.nowhite{
-  background-color: f8f7f0;
+
+.nowhite {
+    background-color: f8f7f0;
 }
-.white{
+
+.white {
     background-color: var(--white);
 }
+
 .nosplit {
     display: flex;
     flex-direction: column;
@@ -267,16 +277,15 @@ section img {
     border-bottom: 1px solid var(--line);
 }
 
-section .history{
+section .history {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 15px;
     width: 100%;
-
 }
 
-.context{
+.context {
     flex: 1;
     min-width: 0;
     text-align: center;
@@ -308,7 +317,8 @@ section .history{
     align-items: center;
     margin-bottom: 3rem;
 }
-.crops{
+
+.crops {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -325,12 +335,11 @@ section .history{
     max-width: 1500px;
 }
 
-.center{
+.center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 .cropcard,
 .acticard {
@@ -346,7 +355,7 @@ section .history{
     text-align: center;
 }
 
-.cropcard img{
+.cropcard img {
     width: 200px;
     height: 200px;
     object-fit: cover;
@@ -364,8 +373,8 @@ section .history{
     border: 1px solid black;
 }
 
-.site-footer{
-  background: var(--white);
-  border-bottom: 1px solid var(--line);
-  transition: box-shadow var(--transition);
+.site-footer {
+    background: var(--white);
+    border-bottom: 1px solid var(--line);
+    transition: box-shadow var(--transition);
 }
