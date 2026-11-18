@@ -33,5 +33,5 @@ Alangilan Campus
 - **Institution:** Batangas State University – Alangilan Campus
 ---
 ## 🖥️ Website Preview
-![AgriFisheries Website](./public/images/door.jpg)
+![AgriFisheries Website](./public/images/preview.png)
 *Developed for educational purposes as part of our Introduction to Computing project.*
