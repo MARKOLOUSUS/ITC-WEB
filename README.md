@@ -49,5 +49,5 @@ The purpose of this website is to present information about these industries in 
 
 ## 🖥️ Website Preview
 
-![AgriFisheries Website](./public/images/preview.png)
+[![AgriFisheries Website](./public/images/preview.png)](https://introtocom.netlify.app/)
 _Developed for educational purposes as part of our Introduction to Computing project._
