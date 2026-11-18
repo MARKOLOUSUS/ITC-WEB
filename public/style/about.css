@@ -23,7 +23,7 @@ main {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
 }
 
 .insidecontain {
@@ -38,6 +38,26 @@ main {
     font-size: clamp(50px, 7.5vw, 150px);
     font-weight: bold;
     line-height: 0.9;
+}
+
+.first {
+    background-image: url("/public/images/climate.jpeg");
+    background-position: center;
+}
+
+.second {
+    background-image: url("/public/images/commercialfishing.jpeg");
+    background-position: center;
+}
+
+.third {
+    background-image: url("/public/images/forestry.jpeg");
+    background-position: center;
+}
+
+.fourth {
+    background-image: url("/public/images/aquaculture.jpeg");
+    background-position: center;
 }
 
 .ourphoto{

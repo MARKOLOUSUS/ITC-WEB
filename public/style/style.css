@@ -259,6 +259,11 @@ main {
     min-height: 91vh;
     padding-bottom: clamp(3.3rem, 4.7vw, 4rem);
     gap: 2rem;
+    background:
+        linear-gradient(to top, transparent 70%, var(--blue-deep) 100%),
+        linear-gradient(to bottom, transparent 70%, var(--green-deep) 100%),
+        url("/public/images/homebg.webp") center / cover no-repeat;
+        background-attachment: fixed;
 }
 
 .split {
