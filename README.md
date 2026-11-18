@@ -22,7 +22,7 @@ The purpose of this website is to present information about these industries in 
 ## 👥 Developers
 - Comendador, Mark Daniel C.
 - Canlas, Angelo Emmanuel I.
-- Villianueva, Austin Kristeoff
+- Villianueva, Austin Kristeoff<br>
 **BSIT 1109 – Group Project**
 Batangas State University – The National Engineering University  
 Alangilan Campus
@@ -32,4 +32,6 @@ Alangilan Campus
 - **Section:** BSIT 1109
 - **Institution:** Batangas State University – Alangilan Campus
 ---
+## 🖥️ Website Preview
+![AgriFisheries Website](./public/image/homebg.png)
 *Developed for educational purposes as part of our Introduction to Computing project.*
