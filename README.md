@@ -20,7 +20,6 @@ The purpose of this website is to present information about these industries in 
 
 - HTML5
 - CSS3
-- JavaScript
 
 ## 🎯 Project Objectives
 
