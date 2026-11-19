@@ -317,17 +317,6 @@ section img {
     align-items: center;
 }
 
-.reveal {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 section .close {
     margin: 0%;
 }
@@ -434,6 +423,41 @@ section img {
 section img:hover {
     transform: scale(1.1);
 }
+
+section .history {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+.context {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.context img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.context p {
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.arrow {
+    margin-top: 40px;
+    font-size: 30px;
+    flex-shrink: 0;
+}
+
 
 @media (max-width: 900px) {
     .productcontain {
