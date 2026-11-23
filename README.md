@@ -46,7 +46,7 @@ The purpose of this website is to present information about these industries in 
 
 ---
 
-## 🖥️ Website Preview (Click the Image)
+## 🖥️ Website Preview (Click the Image, Outdated)
 
 [![AgriFisheries Website](./public/images/preview.png)](https://introtocom.netlify.app/)
 [![AgriFisheries Website](./public/images/preview2.png)](https://introtocom.netlify.app/agriculture)
