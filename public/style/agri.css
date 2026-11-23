@@ -125,7 +125,7 @@ body {
     background: var(--green-700);
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform var(--transition);
+    transition: var(--transition);
 }
 
 main {
@@ -309,10 +309,16 @@ section img {
     gap: 0.7rem;
     overflow: hidden;
 }
+
+.hid3 img:hover,
+.nav-list li:hover,
+.thin:hover,
 .cropcard:hover,
 .acticard:hover {
-    transform:scale(1.1);
+    transform:scale(1.05);
+    transition: var(--transition);
 }
+
 
 .cropcard h4,
 .acticard h4 {

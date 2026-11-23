@@ -416,13 +416,6 @@ section .close {
     height: clamp(90px, 13vw, 180px);
 }
 
-section img {
-    transition: transform 0.3s ease;
-}
-
-section img:hover {
-    transform: scale(1.1);
-}
 
 section .history {
     display: flex;
@@ -458,6 +451,10 @@ section .history {
     flex-shrink: 0;
 }
 
+.hid2 img:nth-child(2){
+    display: none;
+}
+
 
 @media (max-width: 900px) {
     .productcontain {
@@ -472,6 +469,22 @@ section .history {
         display: flex;
         flex-direction: column;
     }
+
+    .hid2 img:nth-child(2){
+        display: block;
+    }
+    .hid2 img{
+        height: 250px;
+    }
+    .hiddengap{
+        padding-top: 5px;
+    }
+    .merge,
+    .divider {
+        height: 250px;
+    }
+
+
 }
 
 @media (max-width: 500px) {
@@ -488,3 +501,10 @@ section .history {
         height: 150px;
     }
 }
+
+section img:hover,
+.nav-list li:hover{
+    transform: scale(1.05);
+    transition: var(--transition);
+}
+
