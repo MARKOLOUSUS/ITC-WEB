@@ -18,8 +18,8 @@ The purpose of this website is to present information about these industries in 
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
+- HTML
+- CSS
 
 ## 🎯 Project Objectives
 
@@ -46,12 +46,12 @@ The purpose of this website is to present information about these industries in 
 
 ---
 
-## 🖥️ Website Preview (Click the Image, Outdated)
+## 🖥️ Website Preview (Click the Image)
 
-[![AgriFisheries Website](./public/images/preview.png)](https://introtocom.netlify.app/)
-[![AgriFisheries Website](./public/images/preview2.png)](https://introtocom.netlify.app/agriculture)
-[![AgriFisheries Website](./public/images/preview3.png)](https://introtocom.netlify.app/fisheries)
-[![AgriFisheries Website](./public/images/preview4.png)](https://introtocom.netlify.app/agriculture)
-[![AgriFisheries Website](./public/images/preview5.png)](https://introtocom.netlify.app/fisheries)
+[![AgriFisheries Website](./public/images/preview.png)](https://itc-agrifisheries.netlify.app/)
+[![AgriFisheries Website](./public/images/preview2.png)](https://itc-agrifisheries.netlify.app/agriculture)
+[![AgriFisheries Website](./public/images/preview3.png)](https://itc-agrifisheries.netlify.app/fisheries)
+[![AgriFisheries Website](./public/images/preview4.png)](https://itc-agrifisheries.netlify.app/agriculture)
+[![AgriFisheries Website](./public/images/preview5.png)](https://itc-agrifisheries.netlify.app/fisheries)
 
 _Developed for educational purposes as part of our Introduction to Computing project._
